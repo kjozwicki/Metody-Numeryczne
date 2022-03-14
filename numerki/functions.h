@@ -7,7 +7,7 @@
 
 int choice (double w);
 void iterations(int &i);
-double horner(double x, double T[], int y);
+double horner(double x, int T[], int y);
 double bisection(double a, double b, double E, int &i, int f, int maks);
 double regulaFalsi(double a, double b, double E, int &i, int f, int maks);
 

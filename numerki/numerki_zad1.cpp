@@ -1,5 +1,5 @@
 //
-// Created by komor on 04.03.2022.
+// Kamil Jóźwicki, Kacper Komorowski
 //
 #include <iostream>
 #include <cmath>
@@ -10,5 +10,10 @@ using namespace std;
 
 int main (){
     double a,b,E,x0,fa,fb,w;
+    int i=0;
+    cout<<"Podaj wartosc w: ";
+    cin>>w;
     choice(w);
+    iterations(i);
+
 }

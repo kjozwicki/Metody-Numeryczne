@@ -1,5 +1,5 @@
 //
-// Created by komor on 08.03.2022.
+// Kamil Jóźwicki, Kacper Komorowski
 //
 
 #include "functions.h"
@@ -7,7 +7,7 @@
 #include <cmath>
 
 int choice (double w) {
-    int x,s,m,i=0;
+    int x,s,m,p,i=0;
     std::cout<<"Ile zlozen funcji wykonac: ";
     std::cin>>m;
     while(i<m) {
@@ -40,20 +40,36 @@ int choice (double w) {
                 if ( z >1 )
                     std::cout<<" + ";
             }
+            horner(w,wspolczynniki,s);
+        } else if (x == 5) {
+            std::cout<<"Podaj do ktorej potegi podniesc liczbe: ";
+            std::cin >> p;
+            if(p==0) w=1;
+            for (int k=1;k<=p;k++) {
+                w*w;
+            }
         }
     }
     std::cout<<"Wynik"<<w<<"\n";
     return w;
 }
 
+void iterations(int &i){
 
-
-double horner(double x, double T[], int y){
-    int w=T[0];
-    for(int i=1;i<=y;i++)
-        w=w*x+T[i];
-    return w;
+    std::cout<<"Ile iteracji ma wykonac program: ";
+    std::cin>>i;
 }
+
+
+
+    double horner(double x, int T[], int s)
+    {
+        int w = T[0];
+
+        for(int i=1;i<=s;i++)
+            w = w*x + T[i];
+        return w;
+    }
 
 double bisection(double a, double b, double E, int &i, int maks){
     double acc, fa, x0, fx0;
