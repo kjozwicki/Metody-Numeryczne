@@ -1,3 +1,3 @@
-C:/Users/Kamil/Desktop/STUDIA/SEMESTR 4/PRZEDMIOTY/METODY NUMERYCZNE/numerki/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Kamil/Desktop/STUDIA/SEMESTR 4/PRZEDMIOTY/METODY NUMERYCZNE/numerki/cmake-build-debug/CMakeFiles/numerki.dir
-C:/Users/Kamil/Desktop/STUDIA/SEMESTR 4/PRZEDMIOTY/METODY NUMERYCZNE/numerki/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/komor/CLionProjects/Metody-Numeryczne/numerki/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/komor/CLionProjects/Metody-Numeryczne/numerki/cmake-build-debug/CMakeFiles/numerki.dir
+C:/Users/komor/CLionProjects/Metody-Numeryczne/numerki/cmake-build-debug/CMakeFiles/rebuild_cache.dir

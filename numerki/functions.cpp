@@ -42,15 +42,8 @@ int choice (double w) {
             }
         }
     }
-    std::cout<<"\n";
+    std::cout<<"Wynik"<<w<<"\n";
     return w;
-}
-
-void iterations(int &i){
-
-    std::cout<<"Wprowadz ilosc iteracji.\n";
-    std::cout<<"\n Wybor: ";
-    std::cin>>i;
 }
 
 
