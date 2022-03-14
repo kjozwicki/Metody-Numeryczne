@@ -5,18 +5,27 @@
       <config projectName="numerki" targetName="numerki" />
     </generated>
   </component>
-  <component name="CMakeSettings">
+  <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
       <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dacae29-4fe4-48ae-85a1-c513dc392f21" name="Changes" comment="dodana funcja wykladnicza i dodanie obliczonej wartosci z hornera do wielomianowej">
+    <list default="true" id="8dacae29-4fe4-48ae-85a1-c513dc392f21" name="Changes" comment="y">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numerki/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/numerki/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numerki/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/numerki/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numerki/cmake-build-debug/CMakeFiles/numerki.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/numerki/cmake-build-debug/CMakeFiles/numerki.dir/compiler_depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numerki/cmake-build-debug/CMakeFiles/numerki.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/numerki/cmake-build-debug/CMakeFiles/numerki.dir/compiler_depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/numerki/cmake-build-debug/CMakeFiles/numerki.dir/functions.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/numerki/cmake-build-debug/CMakeFiles/numerki.dir/functions.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numerki/cmake-build-debug/CMakeFiles/numerki.dir/numerki_zad1.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/numerki/cmake-build-debug/CMakeFiles/numerki.dir/numerki_zad1.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numerki/cmake-build-debug/CMakeFiles/numerki.dir/numerki_zad1.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/numerki/cmake-build-debug/CMakeFiles/numerki.dir/numerki_zad1.cpp.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/numerki/cmake-build-debug/CMakeFiles/numerki.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/numerki/cmake-build-debug/CMakeFiles/numerki.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/numerki/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/numerki/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/numerki/cmake-build-debug/numerki.exe" beforeDir="false" afterPath="$PROJECT_DIR$/numerki/cmake-build-debug/numerki.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/numerki/functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/numerki/functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numerki/functions.h" beforeDir="false" afterPath="$PROJECT_DIR$/numerki/functions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numerki/numerki_zad1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/numerki/numerki_zad1.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647259946293</updated>
-      <workItem from="1647259959712" duration="5369000" />
+      <workItem from="1647259959712" duration="10381000" />
     </task>
     <task id="LOCAL-00001" summary="sprawdzam">
       <created>1647261050901</created>
@@ -87,7 +96,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647267306270</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="drobiazd do poprzedniego">
+      <created>1647267914628</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1647267914628</updated>
+    </task>
+    <task id="LOCAL-00004" summary="y">
+      <created>1647268189766</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1647268189766</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +130,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="sprawdzam" />
     <MESSAGE value="dodana funcja wykladnicza i dodanie obliczonej wartosci z hornera do wielomianowej" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodana funcja wykladnicza i dodanie obliczonej wartosci z hornera do wielomianowej" />
+    <MESSAGE value="drobiazd do poprzedniego" />
+    <MESSAGE value="y" />
+    <option name="LAST_COMMIT_MESSAGE" value="y" />
   </component>
 </project>
