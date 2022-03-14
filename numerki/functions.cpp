@@ -7,10 +7,10 @@
 #include <cmath>
 
 int choice (double w) {
-    int x,s,m,p,i=0;
+    int x,s,m,p,i=1;
     std::cout<<"Ile zlozen funcji wykonac: ";
     std::cin>>m;
-    while(i<m) {
+    while(i<=m) {
         std::cout
                 << "Wybierz funkcje: \n1.Sinus \n2.Cosinus \n3.Tanges \n4.Funcja wielomianowa \n5.Funcja wykladnicza \n\nWybor:  ";
         std::cin >> x;
@@ -50,7 +50,7 @@ int choice (double w) {
             }
         }
     }
-    std::cout<<"Wynik"<<w<<"\n";
+    std::cout<<"Wynik: "<<w<<"\n";
     return w;
 }
 
