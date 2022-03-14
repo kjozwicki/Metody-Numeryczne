@@ -53,7 +53,7 @@ int choice (double w) {
                 for (int k = 1; k < p; k++) {
                     w = w * s;
                 }
-                cout<<w<<"^ ";
+                cout<<s<<"^ ";
                 cout<<p;
             }
         }
