@@ -11,15 +11,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dacae29-4fe4-48ae-85a1-c513dc392f21" name="Changes" comment="dodatkowe funckcje do wyboru metod i przedzilu">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/numerki/cmake-build-debug/CMakeFiles/numerki.dir/functions.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/numerki/cmake-build-debug/CMakeFiles/numerki.dir/functions.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/numerki/cmake-build-debug/CMakeFiles/numerki.dir/numerki_zad1.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/numerki/cmake-build-debug/CMakeFiles/numerki.dir/numerki_zad1.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/numerki/cmake-build-debug/CMakeFiles/numerki.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/numerki/cmake-build-debug/CMakeFiles/numerki.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/numerki/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/numerki/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/numerki/cmake-build-debug/numerki.exe" beforeDir="false" afterPath="$PROJECT_DIR$/numerki/cmake-build-debug/numerki.exe" afterDir="false" />
+    <list default="true" id="8dacae29-4fe4-48ae-85a1-c513dc392f21" name="Changes" comment="do sprawdzenia wielomianowa, zrobienie wykresow i sprawdzenie/poprawienie bisekcja, regula falsi">
       <change beforePath="$PROJECT_DIR$/numerki/functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/numerki/functions.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/numerki/functions.h" beforeDir="false" afterPath="$PROJECT_DIR$/numerki/functions.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/numerki/numerki_zad1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/numerki/numerki_zad1.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647259946293</updated>
-      <workItem from="1647259959712" duration="12576000" />
+      <workItem from="1647259959712" duration="12955000" />
     </task>
     <task id="LOCAL-00001" summary="sprawdzam">
       <created>1647261050901</created>
@@ -112,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647281411763</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="do sprawdzenia wielomianowa, zrobienie wykresow i sprawdzenie/poprawienie bisekcja, regula falsi">
+      <created>1647283629561</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1647283629561</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +135,7 @@
     <MESSAGE value="drobiazd do poprzedniego" />
     <MESSAGE value="y" />
     <MESSAGE value="dodatkowe funckcje do wyboru metod i przedzilu" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodatkowe funckcje do wyboru metod i przedzilu" />
+    <MESSAGE value="do sprawdzenia wielomianowa, zrobienie wykresow i sprawdzenie/poprawienie bisekcja, regula falsi" />
+    <option name="LAST_COMMIT_MESSAGE" value="do sprawdzenia wielomianowa, zrobienie wykresow i sprawdzenie/poprawienie bisekcja, regula falsi" />
   </component>
 </project>

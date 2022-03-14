@@ -107,7 +107,7 @@ double bisection(double a, double b, double &E, int &i, int m){
         cout << x0 << "\n";
         cout << choice(x0) << "\n";
     }
-    cout<<x0; //nie wiem czy zwracac czy wyswietlac
+    cout<<"Wynik po skorzystaniu z metody bisekcji: "<<x0<< "\n";
     return x0;
 }
 double regulaFalsi(double a, double b, double &E, int &i, int m){
@@ -126,6 +126,6 @@ double regulaFalsi(double a, double b, double &E, int &i, int m){
         i++;
         acc=fabs(fx0);
     }
-    cout<<x0; //nie wiem czy zwracac czy wyswietlac
+    cout<<"Wynik po skorzystaniu z regula Falsi: "<<x0;
     return x0;
 }
