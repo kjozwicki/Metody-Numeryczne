@@ -15,7 +15,7 @@ int main (){
     choice(w);
     range(a,b);
     method(i, E);
-//  bisection(a,b,E,i,M)
-//  regulaFalsi(a,b,E,i,M)
+    cout<<"Wynik po skorzystaniu z metody bisekcji: "<<bisection(a,b,E,i,M)<<"\n";
+    cout<<"Wynik po skorzystaniu z regula Falsi: "<<regulaFalsi(a,b,E,i,M);
     return 0;
 }

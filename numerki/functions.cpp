@@ -53,6 +53,8 @@ int choice (double w) {
                 for (int k = 1; k < p; k++) {
                     w = w * s;
                 }
+                cout<<w<<"^ ";
+                cout<<p;
             }
         }
     }
@@ -78,22 +80,18 @@ void iterations(int &i){
     cout<<"Ile iteracji ma wykonac program: ";
     cin>>i;
 }
-
 void epsilon(double &E){
     cout<<"Podaj epsilon: ";
     cin>>E;
 }
-
-
-    double horner(double x, int T[], int s)
+double horner(double x, int T[], int s)
     {
         int w = T[0];
         for(int i=1;i<=s;i++)
             w = w*x + T[i];
         return w;
     }
-
-double bisection(double a, double b, double E, int &i, int m){
+double bisection(double a, double b, double &E, int &i, int m){
     double acc, fa, x0, fx0;
     i=0;
     while((i<m)&&(acc>E)) {
@@ -106,13 +104,13 @@ double bisection(double a, double b, double E, int &i, int m){
             a = x0;
         i++;
         acc = fabs(fx0);
-        std::cout << x0 << "\n";
-        std::cout << choice(x0) << "\n";
+        cout << x0 << "\n";
+        cout << choice(x0) << "\n";
     }
+    cout<<x0; //nie wiem czy zwracac czy wyswietlac
     return x0;
 }
-
-double regulaFalsi(double a, double b, double E, int &i, int m){
+double regulaFalsi(double a, double b, double &E, int &i, int m){
     double acc, fa, fb, x0, fx0;
     i=0;
     while((i<m)&&(acc>E))
@@ -128,5 +126,6 @@ double regulaFalsi(double a, double b, double E, int &i, int m){
         i++;
         acc=fabs(fx0);
     }
+    cout<<x0; //nie wiem czy zwracac czy wyswietlac
     return x0;
 }
