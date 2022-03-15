@@ -7,6 +7,7 @@
 #include <cmath>
 #include <vector>
 #include "count.h"
+#include "gnuplot.h"
 #define GNUPLOT_PATH "C:\\minGW\\gnuplot\\bin"
 std::string funkcja1;
 std::vector<std::string> funkcja2;
@@ -88,41 +89,40 @@ double regulaFalsi(double a, double b, double &E, int &i, int wybor_funkcji[], i
             x0 = 0;
         return x0;
 }
-//void wykresy(double a, double b, double &E, int &i, int m, double wartosc_x) {
-//    //wykresy
-////    Gnuplot::set_GNUPlotPath( GNUPLOT_PATH );
-////    Gnuplot main_plot;
-//
-//    // Podpisy na wykresie, zeby bylo wiadomo co na nim widac
-//    main_plot.set_title( "Funkcja"+funkcja1);
-//
-//    // styl rysowania wykresu
-//    main_plot.set_style( "lines" );
-//
-//    // siatka poprawia czytelnosc
-//    main_plot.set_grid();
-//
-//    // zakres osi x
-//    main_plot.set_xrange( a , b ) ;
-//
-//    // funkcja do narysowania
-//    // UWAGA: poniższy przykład służy jedynie zademonstrowaniu, że gnuplot jest w
-//    // stanie rysować wykresy na podstawie wzoru funkcji. Proszę jednak pamiętać,
-//    // że zgodnie z wytycznymi zamieszczonymi na Wikampie nie wolno z tej
-//    // możliwości korzystać. Dane do wykresu zawsze należy przekazywać w tablicy -
-//    // przykład poniżej.
-////    main_plot.plot_equation( funkcja2 ) ;
-//
-//    // teraz narsujemy kilka punktow. Na poczatek zmiana stylu rysowania:
-//    main_plot.set_style( "points" );
-//    main_plot.set_pointsize( 2.0 );
-//
-//    // Tworzenie danych do wykresu. Potrzebne sa dwa wektory STL. Jeden opisuje
-//    // polozenie punktow na osi X, drugi na osi Y. W rzeczywistym programie
-//    // dane nie beda oczywiscie wpisywane na sztywno w kodzie, a wyliczane w oparciu
-//    // o parametry wprowadzone przez uzytkownika.
-////    main_plot.plot_xy( bisection(a,b,E,i,m), regulaFalsi(a,b,E,i,m), "podpis - opcjonalnie" );
-//
-//    // czekamy na nacisniecie klawisza Enter
-//    getchar();
-//}
+void wykresy(double a, double b, double x0, double x1, vector<double> tablica1, vector<double> tablica2) {
+   Gnuplot::set_GNUPlotPath( GNUPLOT_PATH );
+   Gnuplot main_plot;
+
+    // Podpisy na wykresie, zeby bylo wiadomo co na nim widac
+    main_plot.set_title( "Funkcja");
+
+    // styl rysowania wykresu
+    main_plot.set_style( "lines" );
+
+    // siatka poprawia czytelnosc
+    main_plot.set_grid();
+
+    // zakres osi x
+    main_plot.set_xrange( a , b ) ;
+
+    // funkcja do narysowania
+    // UWAGA: poniższy przykład służy jedynie zademonstrowaniu, że gnuplot jest w
+    // stanie rysować wykresy na podstawie wzoru funkcji. Proszę jednak pamiętać,
+    // że zgodnie z wytycznymi zamieszczonymi na Wikampie nie wolno z tej
+    // możliwości korzystać. Dane do wykresu zawsze należy przekazywać w tablicy -
+    // przykład poniżej.
+    main_plot.plot_slope( tablica1, tablica2 ) ;
+
+    // teraz narsujemy kilka punktow. Na poczatek zmiana stylu rysowania:
+    main_plot.set_style( "points" );
+    main_plot.set_pointsize( 2.0 );
+
+    // Tworzenie danych do wykresu. Potrzebne sa dwa wektory STL. Jeden opisuje
+    // polozenie punktow na osi X, drugi na osi Y. W rzeczywistym programie
+    // dane nie beda oczywiscie wpisywane na sztywno w kodzie, a wyliczane w oparciu
+    // o parametry wprowadzone przez uzytkownika.
+    main_plot.plot_xy( x0, x1 );
+
+    // czekamy na nacisniecie klawisza Enter
+    getchar();
+}

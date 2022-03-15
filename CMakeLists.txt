@@ -4,4 +4,4 @@ project(numerki)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(
-        numerki_zad1.cpp functions.cpp functions.h count.cpp count.h choice.cpp choice.h numerki_zad1.cpp)
+        numerki_zad1.cpp functions.cpp functions.h count.cpp count.h choice.cpp choice.h numerki_zad1.cpp gnuplot.h)
