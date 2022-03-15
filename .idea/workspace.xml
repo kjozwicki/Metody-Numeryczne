@@ -12,12 +12,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="222a18d8-c512-4148-9095-addf54dabaa5" name="Changes" comment="bardzo duzo zmian do przodu // duzo refactoringu">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/choice.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/choice.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/choice.h" beforeDir="false" afterPath="$PROJECT_DIR$/choice.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/count.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/count.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="222a18d8-c512-4148-9095-addf54dabaa5" name="Changes" comment="count, choice dziala poprawnie, zabezpieczenia wprowadzenia zlych danych" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +80,7 @@
       <updated>1647355836935</updated>
       <workItem from="1647355839432" duration="954000" />
       <workItem from="1647357562203" duration="615000" />
-      <workItem from="1647358199360" duration="7368000" />
+      <workItem from="1647358199360" duration="7668000" />
     </task>
     <task id="LOCAL-00001" summary="bardzo duzo zmian do przodu // duzo refactoringu">
       <created>1647369123474</created>
@@ -94,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647369123474</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="count, choice dziala poprawnie, zabezpieczenia wprowadzenia zlych danych">
+      <created>1647371223233</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1647371223233</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,7 +115,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="bardzo duzo zmian do przodu // duzo refactoringu" />
-    <option name="LAST_COMMIT_MESSAGE" value="bardzo duzo zmian do przodu // duzo refactoringu" />
+    <MESSAGE value="count, choice dziala poprawnie, zabezpieczenia wprowadzenia zlych danych" />
+    <option name="LAST_COMMIT_MESSAGE" value="count, choice dziala poprawnie, zabezpieczenia wprowadzenia zlych danych" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
