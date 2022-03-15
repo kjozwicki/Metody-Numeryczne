@@ -3,11 +3,12 @@
 //
 #include <iostream>
 #include "functions.h"
-#define GNUPLOT_PATH "C:\\ProgramFiles\\gnuplot\\bin"
 
 using namespace std;
 
 int main (){
+
+    //glowne funkcje
     double E,x0,fa,fb,wartosc_x,a,b;
     int i=0,M;
     cout<<"Podaj wartosc x:";
@@ -17,5 +18,6 @@ int main (){
     method(i, E);
     bisection(a,b,E,i,M);
     regulaFalsi(a,b,E,i,M);
+    wykresy(a,b,E,i,M, wartosc_x);
     return 0;
 }
