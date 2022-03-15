@@ -68,14 +68,16 @@ double bisection(double a, double b, double &E, int &i, int wybor_funkcji[], int
         while((rep<i)&&(acc>E));
         return x0;
 }
-double regulaFalsi(double a, double b, double &E, int &i, int wybor_funkcji[], int ilosc_zlozen, double &potega, int wspolczynniki[], int &stopien, int &wolny){
-        double acc, fa, fb, x0, fx0;
+double regulaFalsi(double a, double b, double &E, int &i, int wybor_funkcji[], int ilosc_zlozen, double &potega, int wspolczynniki[], int &stopien, int &wolny) {
+    double acc, fa, fb, x0, fx0;
         int rep=0;
         do {
-            count(ilosc_zlozen, wybor_funkcji, a, potega, wspolczynniki, stopien, wolny);
-            count(ilosc_zlozen, wybor_funkcji, b, potega, wspolczynniki, stopien, wolny);
+            fa=a;
+            fb=b;
+            count(ilosc_zlozen, wybor_funkcji, fa, potega, wspolczynniki, stopien, wolny);
+            count(ilosc_zlozen, wybor_funkcji, fb, potega, wspolczynniki, stopien, wolny);
             x0 = (a * fb - b * fa) / (fb - fa);
-            fx0 =x0;
+            fx0 = x0;
             count(ilosc_zlozen, wybor_funkcji, fx0, potega, wspolczynniki, stopien, wolny);
             if (fa * fx0 < 0)
                 b = x0;
@@ -93,36 +95,12 @@ void wykresy(double a, double b, double x0, double x1, vector<double> tablica1, 
    Gnuplot::set_GNUPlotPath( GNUPLOT_PATH );
    Gnuplot main_plot;
 
-    // Podpisy na wykresie, zeby bylo wiadomo co na nim widac
-    main_plot.set_title( "Funkcja");
-
-    // styl rysowania wykresu
-    main_plot.set_style( "lines" );
-
-    // siatka poprawia czytelnosc
+    main_plot.set_xlabel("Os x");
+    main_plot.set_ylabel("Os y");
     main_plot.set_grid();
-
-    // zakres osi x
-    main_plot.set_xrange( a , b ) ;
-
-    // funkcja do narysowania
-    // UWAGA: poniższy przykład służy jedynie zademonstrowaniu, że gnuplot jest w
-    // stanie rysować wykresy na podstawie wzoru funkcji. Proszę jednak pamiętać,
-    // że zgodnie z wytycznymi zamieszczonymi na Wikampie nie wolno z tej
-    // możliwości korzystać. Dane do wykresu zawsze należy przekazywać w tablicy -
-    // przykład poniżej.
-    main_plot.plot_slope( tablica1, tablica2 ) ;
-
-    // teraz narsujemy kilka punktow. Na poczatek zmiana stylu rysowania:
-    main_plot.set_style( "points" );
-    main_plot.set_pointsize( 2.0 );
-
-    // Tworzenie danych do wykresu. Potrzebne sa dwa wektory STL. Jeden opisuje
-    // polozenie punktow na osi X, drugi na osi Y. W rzeczywistym programie
-    // dane nie beda oczywiscie wpisywane na sztywno w kodzie, a wyliczane w oparciu
-    // o parametry wprowadzone przez uzytkownika.
-    main_plot.plot_xy( x0, x1 );
-
-    // czekamy na nacisniecie klawisza Enter
-    getchar();
+    main_plot.set_xrange(a, b);
+    main_plot.set_yrange(-100, 100);
+    main_plot.set_style("lines");
+    main_plot.set_pointsize(2);
+    main_plot.plot_xy(tablica2, tablica1, "f(x)");
 }

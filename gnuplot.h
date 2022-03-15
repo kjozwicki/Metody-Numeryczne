@@ -520,8 +520,8 @@ public:
 
 
     /// plot an equation of the form: y = ax + b, you supply a and b
-    Gnuplot& plot_slope(const std::vector<double> a,
-                        const std::vector<double> b,
+    Gnuplot& plot_slope(const double a,
+                        const double b,
                         const std::string &title = "");
 
 
@@ -1308,8 +1308,8 @@ Gnuplot& Gnuplot::set_cbrange(const double iFrom,
 // Plots a linear equation y=ax+b (where you supply the
 // slope a and intercept b)
 //
-Gnuplot& Gnuplot::plot_slope(const std::vector<double> a,
-                             const std::vector<double> b,
+Gnuplot& Gnuplot::plot_slope(const double a,
+                             const double b,
                              const std::string &title)
 {
     std::ostringstream cmdstr;

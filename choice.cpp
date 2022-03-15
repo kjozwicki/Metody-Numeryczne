@@ -27,7 +27,6 @@ int choice(int wybor_funkcji[], int &ilosc_zlozen, double &potega, int wspolczyn
         if(wybor_funkcji[i] ==4) {
             cout<< "Podaj stopien wielomianu: ";
             cin >> stopien;
-            int wspolczynniki [stopien];
             cout<< "Podaj wspolczynniki od najwyzszego stopnia do najmniejszego: ";
             for (int z=0; z < stopien; z++) {
                 cin>>wspolczynniki[z];
