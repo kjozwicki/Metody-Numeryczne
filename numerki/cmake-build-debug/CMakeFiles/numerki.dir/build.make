@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Users\Kamil\AppData\Local\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Users\Kamil\AppData\Local\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\komor\CLionProjects\Metody-Numeryczne\numerki
+CMAKE_SOURCE_DIR = "C:\Users\Kamil\Desktop\STUDIA\SEMESTR 4\PRZEDMIOTY\METODY NUMERYCZNE\numerki"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\komor\CLionProjects\Metody-Numeryczne\numerki\cmake-build-debug
+CMAKE_BINARY_DIR = "C:\Users\Kamil\Desktop\STUDIA\SEMESTR 4\PRZEDMIOTY\METODY NUMERYCZNE\numerki\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/numerki.dir/depend.make
@@ -71,30 +71,30 @@ include CMakeFiles/numerki.dir/flags.make
 CMakeFiles/numerki.dir/numerki_zad1.cpp.obj: CMakeFiles/numerki.dir/flags.make
 CMakeFiles/numerki.dir/numerki_zad1.cpp.obj: ../numerki_zad1.cpp
 CMakeFiles/numerki.dir/numerki_zad1.cpp.obj: CMakeFiles/numerki.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\komor\CLionProjects\Metody-Numeryczne\numerki\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/numerki.dir/numerki_zad1.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/numerki.dir/numerki_zad1.cpp.obj -MF CMakeFiles\numerki.dir\numerki_zad1.cpp.obj.d -o CMakeFiles\numerki.dir\numerki_zad1.cpp.obj -c C:\Users\komor\CLionProjects\Metody-Numeryczne\numerki\numerki_zad1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Kamil\Desktop\STUDIA\SEMESTR 4\PRZEDMIOTY\METODY NUMERYCZNE\numerki\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/numerki.dir/numerki_zad1.cpp.obj"
+	C:\Users\Kamil\AppData\Local\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/numerki.dir/numerki_zad1.cpp.obj -MF CMakeFiles\numerki.dir\numerki_zad1.cpp.obj.d -o CMakeFiles\numerki.dir\numerki_zad1.cpp.obj -c "C:\Users\Kamil\Desktop\STUDIA\SEMESTR 4\PRZEDMIOTY\METODY NUMERYCZNE\numerki\numerki_zad1.cpp"
 
 CMakeFiles/numerki.dir/numerki_zad1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/numerki.dir/numerki_zad1.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\komor\CLionProjects\Metody-Numeryczne\numerki\numerki_zad1.cpp > CMakeFiles\numerki.dir\numerki_zad1.cpp.i
+	C:\Users\Kamil\AppData\Local\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Kamil\Desktop\STUDIA\SEMESTR 4\PRZEDMIOTY\METODY NUMERYCZNE\numerki\numerki_zad1.cpp" > CMakeFiles\numerki.dir\numerki_zad1.cpp.i
 
 CMakeFiles/numerki.dir/numerki_zad1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/numerki.dir/numerki_zad1.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\komor\CLionProjects\Metody-Numeryczne\numerki\numerki_zad1.cpp -o CMakeFiles\numerki.dir\numerki_zad1.cpp.s
+	C:\Users\Kamil\AppData\Local\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Kamil\Desktop\STUDIA\SEMESTR 4\PRZEDMIOTY\METODY NUMERYCZNE\numerki\numerki_zad1.cpp" -o CMakeFiles\numerki.dir\numerki_zad1.cpp.s
 
 CMakeFiles/numerki.dir/functions.cpp.obj: CMakeFiles/numerki.dir/flags.make
 CMakeFiles/numerki.dir/functions.cpp.obj: ../functions.cpp
 CMakeFiles/numerki.dir/functions.cpp.obj: CMakeFiles/numerki.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\komor\CLionProjects\Metody-Numeryczne\numerki\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/numerki.dir/functions.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/numerki.dir/functions.cpp.obj -MF CMakeFiles\numerki.dir\functions.cpp.obj.d -o CMakeFiles\numerki.dir\functions.cpp.obj -c C:\Users\komor\CLionProjects\Metody-Numeryczne\numerki\functions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Kamil\Desktop\STUDIA\SEMESTR 4\PRZEDMIOTY\METODY NUMERYCZNE\numerki\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/numerki.dir/functions.cpp.obj"
+	C:\Users\Kamil\AppData\Local\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/numerki.dir/functions.cpp.obj -MF CMakeFiles\numerki.dir\functions.cpp.obj.d -o CMakeFiles\numerki.dir\functions.cpp.obj -c "C:\Users\Kamil\Desktop\STUDIA\SEMESTR 4\PRZEDMIOTY\METODY NUMERYCZNE\numerki\functions.cpp"
 
 CMakeFiles/numerki.dir/functions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/numerki.dir/functions.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\komor\CLionProjects\Metody-Numeryczne\numerki\functions.cpp > CMakeFiles\numerki.dir\functions.cpp.i
+	C:\Users\Kamil\AppData\Local\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Kamil\Desktop\STUDIA\SEMESTR 4\PRZEDMIOTY\METODY NUMERYCZNE\numerki\functions.cpp" > CMakeFiles\numerki.dir\functions.cpp.i
 
 CMakeFiles/numerki.dir/functions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/numerki.dir/functions.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\komor\CLionProjects\Metody-Numeryczne\numerki\functions.cpp -o CMakeFiles\numerki.dir\functions.cpp.s
+	C:\Users\Kamil\AppData\Local\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Kamil\Desktop\STUDIA\SEMESTR 4\PRZEDMIOTY\METODY NUMERYCZNE\numerki\functions.cpp" -o CMakeFiles\numerki.dir\functions.cpp.s
 
 # Object files for target numerki
 numerki_OBJECTS = \
@@ -110,7 +110,7 @@ numerki.exe: CMakeFiles/numerki.dir/build.make
 numerki.exe: CMakeFiles/numerki.dir/linklibs.rsp
 numerki.exe: CMakeFiles/numerki.dir/objects1.rsp
 numerki.exe: CMakeFiles/numerki.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\komor\CLionProjects\Metody-Numeryczne\numerki\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable numerki.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Kamil\Desktop\STUDIA\SEMESTR 4\PRZEDMIOTY\METODY NUMERYCZNE\numerki\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable numerki.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\numerki.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -122,6 +122,6 @@ CMakeFiles/numerki.dir/clean:
 .PHONY : CMakeFiles/numerki.dir/clean
 
 CMakeFiles/numerki.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\komor\CLionProjects\Metody-Numeryczne\numerki C:\Users\komor\CLionProjects\Metody-Numeryczne\numerki C:\Users\komor\CLionProjects\Metody-Numeryczne\numerki\cmake-build-debug C:\Users\komor\CLionProjects\Metody-Numeryczne\numerki\cmake-build-debug C:\Users\komor\CLionProjects\Metody-Numeryczne\numerki\cmake-build-debug\CMakeFiles\numerki.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Kamil\Desktop\STUDIA\SEMESTR 4\PRZEDMIOTY\METODY NUMERYCZNE\numerki" "C:\Users\Kamil\Desktop\STUDIA\SEMESTR 4\PRZEDMIOTY\METODY NUMERYCZNE\numerki" "C:\Users\Kamil\Desktop\STUDIA\SEMESTR 4\PRZEDMIOTY\METODY NUMERYCZNE\numerki\cmake-build-debug" "C:\Users\Kamil\Desktop\STUDIA\SEMESTR 4\PRZEDMIOTY\METODY NUMERYCZNE\numerki\cmake-build-debug" "C:\Users\Kamil\Desktop\STUDIA\SEMESTR 4\PRZEDMIOTY\METODY NUMERYCZNE\numerki\cmake-build-debug\CMakeFiles\numerki.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/numerki.dir/depend
 

@@ -8,62 +8,68 @@
 
 using namespace std;
 
-int choice (double w) {
-    int x,s,m,p,i=1;
+int choice (double wartosc_x) {
+    int wybor,stopien,m,p,i=1;
     cout<<"Ile zlozen funcji wykonac: ";
     cin>>m;
     while(i<=m) {
         cout<<"----------"<<endl;
         cout
                 << "Wybierz funkcje: \n1.Sinus \n2.Cosinus \n3.Tanges \n4.Funcja wielomianowa \n5.Funcja wykladnicza \nWybor:  ";
-        cin >> x;
+        cin >> wybor;
         cout<<"----------"<<endl;
-        if (x > 5 || x < 1) cout << "Podano zly numer, podaj jeszcze raz \n";
-        else if (x == 1) {
+        if (wybor > 5 || wybor < 1) cout << "Podano zly numer, podaj jeszcze raz \n";
+        else if (wybor == 1) {
             i++;
-            w=sin(w);
-        } else if (x == 2) {
+            wartosc_x=sin(wartosc_x);
+        } else if (wybor == 2) {
             i++;
-            w=cos(w);
-        } else if (x == 3) {
+            wartosc_x=cos(wartosc_x);
+        } else if (wybor == 3) {
             i++;
-            w=tan(w);
-        } else if (x == 4) {
+            wartosc_x=tan(wartosc_x);
+        } else if (wybor == 4) {
             i++;
             cout<< "Podaj stopien wielomianu: ";
-            cin >> s;
-            int wspolczynniki [s];
+            cin >> stopien;
+            int wspolczynniki [stopien];
             cout<< "Podaj wspolczynniki od najwyzszego stopnia do najmniejszego: ";
-            for (int z=0;z<s;z++) {
+            for (int z=0; z < stopien; z++) {
                 cin>>wspolczynniki[z];
             }
-            for (int z=s,i=0;z>0;z--,i++) {
+            for (int z=stopien,i=0; z > 0; z--,i++) {
                 cout << wspolczynniki[i];
-                cout<<"x^";
+                cout<<"wybor^";
                 cout<<z;
                 if ( z >1 )
                     std::cout<<" + ";
             }
             cout<<endl;
-            horner(w,wspolczynniki,s);
-        } else if (x == 5) {
+            wartosc_x=horner(wartosc_x, wspolczynniki, stopien);
+        } else if (wybor == 5) {
             i++;
-            double s=w;
+            double s=wartosc_x;
             cout<<"Podaj do ktorej potegi podniesc liczbe: ";
             cin >> p;
-            if(p==0) w=1;
+            if(p==0) wartosc_x=1;
             else {
                 for (int k = 1; k < p; k++) {
-                    w = w * s;
+                    wartosc_x = wartosc_x * s;
                 }
-                cout<<w<<"^";
-                cout<<p;
+                cout << s << "^" << p;
             }
         }
     }
     cout<<endl;
-    cout<<"Wynik: "<<w<<"\n";
-    return w;
+    cout << "Wynik: " << wartosc_x <<endl;
+    return wartosc_x;
+}
+double horner(double wartosc_x, int T[], int stopien)
+{
+    int suma = T[0];
+    for(int i=1;i<=stopien;i++)
+        suma = suma * wartosc_x + T[i];
+    return suma;
 }
 void range(double &a, double &b){
     cout<<"Podaj na jakim przedziale bedzie szukane miejsce zerowe (a,b).\n";
@@ -87,13 +93,6 @@ void iterations(int &i){
 void epsilon(double &E){
     cout<<"Podaj epsilon:";
     cin>>E;
-}
-double horner(double x, int T[], int s)
-{
-    int w = T[0];
-    for(int i=1;i<=s;i++)
-        w = w*x + T[i];
-    return w;
 }
 double bisection(double a, double b, double &E, int &i, int m){
     double acc, fa, x0, fx0;

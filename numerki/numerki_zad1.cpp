@@ -8,11 +8,11 @@
 using namespace std;
 
 int main (){
-    double E,x0,fa,fb,w,a,b;
+    double E,x0,fa,fb,wartosc_x,a,b;
     int i=0,M;
-    cout<<"Podaj wartosc w: ";
-    cin>>w;
-    choice(w);
+    cout<<"Podaj wartosc x:";
+    cin >> wartosc_x;
+    choice(wartosc_x);
     range(a,b);
     method(i, E);
     bisection(a,b,E,i,M);

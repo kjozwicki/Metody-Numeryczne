@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/komor/CLionProjects/Metody-Numeryczne/numerki/functions.cpp" "CMakeFiles/numerki.dir/functions.cpp.obj" "gcc" "CMakeFiles/numerki.dir/functions.cpp.obj.d"
-  "C:/Users/komor/CLionProjects/Metody-Numeryczne/numerki/numerki_zad1.cpp" "CMakeFiles/numerki.dir/numerki_zad1.cpp.obj" "gcc" "CMakeFiles/numerki.dir/numerki_zad1.cpp.obj.d"
+  "C:/Users/Kamil/Desktop/STUDIA/SEMESTR 4/PRZEDMIOTY/METODY NUMERYCZNE/numerki/functions.cpp" "CMakeFiles/numerki.dir/functions.cpp.obj" "gcc" "CMakeFiles/numerki.dir/functions.cpp.obj.d"
+  "C:/Users/Kamil/Desktop/STUDIA/SEMESTR 4/PRZEDMIOTY/METODY NUMERYCZNE/numerki/numerki_zad1.cpp" "CMakeFiles/numerki.dir/numerki_zad1.cpp.obj" "gcc" "CMakeFiles/numerki.dir/numerki_zad1.cpp.obj.d"
   )
 
 # Targets to which this target links.
