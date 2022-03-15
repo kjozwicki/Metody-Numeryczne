@@ -8,6 +8,7 @@
 #include <vector>
 #include "count.h"
 #include "gnuplot.h"
+#include "vector"
 #define GNUPLOT_PATH "C:\\minGW\\gnuplot\\bin"
 std::string funkcja1;
 std::vector<std::string> funkcja2;
@@ -91,7 +92,7 @@ double regulaFalsi(double a, double b, double &E, int &i, int wybor_funkcji[], i
             x0 = 0;
         return x0;
 }
-void wykresy(double a, double b, double x0, double x1, vector<double> tablica1, vector<double> tablica2) {
+void wykresy(double a, double b, double x0, double x1,int ilosc_zlozen,int wybor_funkcji[],double &potega,int wspolczynniki[],int &stopien,int &wolny) {
    Gnuplot::set_GNUPlotPath( GNUPLOT_PATH );
    Gnuplot main_plot;
 
@@ -102,5 +103,24 @@ void wykresy(double a, double b, double x0, double x1, vector<double> tablica1, 
     main_plot.set_yrange(-100, 100);
     main_plot.set_style("lines");
     main_plot.set_pointsize(2);
-    main_plot.plot_xy(tablica2, tablica1, "f(x)");
+
+    vector<double> x;
+    vector<double> y;
+    vector<double> bisekcjazero;
+    vector<double> falsizero;
+    vector<double> zero;
+    zero.push_back(0);
+    falsizero.push_back(x1);
+    bisekcjazero.push_back(x0);
+    for(double i=a; i<b; i+=0.1) {
+        x.push_back(i);
+        double pom_i=i;
+        count(ilosc_zlozen, wybor_funkcji, pom_i, potega, wspolczynniki, stopien, wolny);
+        y.push_back(pom_i);
+    }
+    main_plot.plot_xy(x, y, "f(x)" );
+    main_plot.plot_xy(bisekcjazero, zero, "bisekcja");
+    main_plot.plot_xy(falsizero,zero, "falsi");
+    system("cls");
+    system("pause");
 }

@@ -5,8 +5,6 @@
 #include "functions.h"
 #include "choice.h"
 #include "count.h"
-#include "cmath"
-#include "vector"
 
 using namespace std;
 
@@ -31,19 +29,7 @@ int main (){
     double x1 = regulaFalsi(granica_dolna,granica_gorna,epsilon,iteracja,wybor_funkcji,ilosc_zlozen,potega, wspolczynniki, stopien, wolny);
     cout<<"Wynik po skorzystaniu z regula Falsi: "<<x1;
 
-    int zakres = fabs(granica_dolna)+fabs(granica_gorna);
-    vector<double> x;
-    for(int i=0; i<zakres; i++) {
-        x.at(i)=granica_dolna;
-        granica_dolna++;
-    }
-    vector<double> y;
-    for(int j=0; j<zakres; j++) {
-        y.at(j)=granica_dolna;
-        count(ilosc_zlozen, wybor_funkcji, granica_dolna, potega, wspolczynniki, stopien, wolny);
-        granica_dolna++;
-    }
-    wykresy(granica_dolna,granica_gorna,x0, x1, x, y);
+    wykresy(granica_dolna,granica_gorna,x0, x1, ilosc_zlozen, wybor_funkcji, potega, wspolczynniki, stopien, wolny);
 
     return 0;
 }

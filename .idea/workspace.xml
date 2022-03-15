@@ -12,11 +12,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="222a18d8-c512-4148-9095-addf54dabaa5" name="Changes" comment="wykresy??">
+    <list default="true" id="222a18d8-c512-4148-9095-addf54dabaa5" name="Changes" comment="bisekcja,falsi?">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/choice.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/choice.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/functions.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gnuplot.h" beforeDir="false" afterPath="$PROJECT_DIR$/gnuplot.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.h" beforeDir="false" afterPath="$PROJECT_DIR$/functions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numerki_zad1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/numerki_zad1.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +85,7 @@
       <updated>1647355836935</updated>
       <workItem from="1647355839432" duration="954000" />
       <workItem from="1647357562203" duration="615000" />
-      <workItem from="1647358199360" duration="14011000" />
+      <workItem from="1647358199360" duration="15576000" />
     </task>
     <task id="LOCAL-00001" summary="bardzo duzo zmian do przodu // duzo refactoringu">
       <created>1647369123474</created>
@@ -115,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647373363242</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="bisekcja,falsi?">
+      <created>1647385914440</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1647385914440</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +144,7 @@
     <MESSAGE value="count, choice dziala poprawnie, zabezpieczenia wprowadzenia zlych danych" />
     <MESSAGE value="wszystko" />
     <MESSAGE value="wykresy??" />
-    <option name="LAST_COMMIT_MESSAGE" value="wykresy??" />
+    <MESSAGE value="bisekcja,falsi?" />
+    <option name="LAST_COMMIT_MESSAGE" value="bisekcja,falsi?" />
   </component>
 </project>
