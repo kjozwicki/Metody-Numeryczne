@@ -13,9 +13,11 @@ int choice (double w) {
     cout<<"Ile zlozen funcji wykonac: ";
     cin>>m;
     while(i<=m) {
+        cout<<"----------"<<endl;
         cout
                 << "Wybierz funkcje: \n1.Sinus \n2.Cosinus \n3.Tanges \n4.Funcja wielomianowa \n5.Funcja wykladnicza \nWybor:  ";
         cin >> x;
+        cout<<"----------"<<endl;
         if (x > 5 || x < 1) cout << "Podano zly numer, podaj jeszcze raz \n";
         else if (x == 1) {
             i++;
@@ -42,6 +44,7 @@ int choice (double w) {
                 if ( z >1 )
                     std::cout<<" + ";
             }
+            cout<<endl;
             horner(w,wspolczynniki,s);
         } else if (x == 5) {
             i++;
@@ -53,44 +56,45 @@ int choice (double w) {
                 for (int k = 1; k < p; k++) {
                     w = w * s;
                 }
-                cout<<s<<"^ ";
+                cout<<w<<"^";
                 cout<<p;
             }
         }
     }
+    cout<<endl;
     cout<<"Wynik: "<<w<<"\n";
     return w;
 }
 void range(double &a, double &b){
     cout<<"Podaj na jakim przedziale bedzie szukane miejsce zerowe (a,b).\n";
-    cout<<"a= ";
+    cout<<"a=";
     cin>>a;
-    cout<<"b= ";
+    cout<<"b=";
     cin>>b;
 }
 void method(int &i, double &E){
     int m;
-    cout<<"\nPodaj z czego korzystac przy szukaniu miejsca zerowego(1.Liczba iteracji, 2.Podany epsilon) : ";
+    cout<<"\nPodaj z czego korzystac przy szukaniu miejsca zerowego \n1.Liczba iteracji \n2.Podany epsilon "<<endl;
     cin>>m;
     if(m!=1&&m!=2)    cout<<"Podano zly numer\n";
     else if (m == 1) iterations(i);
     else if (m == 2)  epsilon(E);
 }
 void iterations(int &i){
-    cout<<"Ile iteracji ma wykonac program: ";
+    cout<<"Ile iteracji ma wykonac program:";
     cin>>i;
 }
 void epsilon(double &E){
-    cout<<"Podaj epsilon: ";
+    cout<<"Podaj epsilon:";
     cin>>E;
 }
 double horner(double x, int T[], int s)
-    {
-        int w = T[0];
-        for(int i=1;i<=s;i++)
-            w = w*x + T[i];
-        return w;
-    }
+{
+    int w = T[0];
+    for(int i=1;i<=s;i++)
+        w = w*x + T[i];
+    return w;
+}
 double bisection(double a, double b, double &E, int &i, int m){
     double acc, fa, x0, fx0;
     i=0;
